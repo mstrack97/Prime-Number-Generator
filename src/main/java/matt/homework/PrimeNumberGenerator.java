@@ -7,6 +7,14 @@ import java.util.ArrayList;
 public class PrimeNumberGenerator {
     ArrayList<Integer> primeNumbers = new ArrayList<Integer>();
 
+    public PrimeNumberGenerator() {
+        getPrimeNumbers();
+    }
+
+    public ArrayList<Integer> getPrimeList() {
+        return primeNumbers;
+    }
+
 	public ArrayList<Integer> getPrimeNumbers() {
         primeNumbers.add(1);
 		int loopNum = 1;

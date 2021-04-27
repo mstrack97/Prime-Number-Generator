@@ -16,7 +16,7 @@ public class PrimeNumberController {
 
 	@GetMapping("/")
 	public ArrayList<Integer> runPrimeFunction() {
-		return primeNumberGenerator.getPrimeNumbers();
+		return primeNumberGenerator.getPrimeList();
 	}
 }
 
