@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 @Component
 public class PrimeNumberGenerator {
-	String numberList = "1";
     ArrayList<Integer> primeNumbers = new ArrayList<Integer>();
 
 	public ArrayList<Integer> getPrimeNumbers() {
@@ -20,7 +19,6 @@ public class PrimeNumberGenerator {
 				}
 			}
 			if (counter == 2) {
-				numberList = numberList + " " + lastPrime;
                 primeNumbers.add(lastPrime);
 				loopNum++;
 			}
