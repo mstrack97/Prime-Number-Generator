@@ -5,17 +5,18 @@ import java.util.ArrayList;
 
 @Component
 public class PrimeNumberGenerator {
-    ArrayList<Integer> primeNumbers = new ArrayList<Integer>();
+    ArrayList<Integer> primeNumbers;
 
     public PrimeNumberGenerator() {
-        getPrimeNumbers();
+        this.primeNumbers = initializePrimeNumbers();
     }
 
     public ArrayList<Integer> getPrimeList() {
         return primeNumbers;
     }
 
-	public ArrayList<Integer> getPrimeNumbers() {
+	public ArrayList<Integer> initializePrimeNumbers() {
+        ArrayList<Integer> primeNumbers = new ArrayList<>();
         primeNumbers.add(1);
 		int loopNum = 1;
 		int lastPrime = 0;
